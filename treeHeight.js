@@ -91,7 +91,8 @@ function treeHeight3 ( node ) {
 /** Test */
 var getTree = function(mode) {
 	var i = 0,
-		tree = null;
+		tree = null,
+		max;
 		
 	switch (mode) {
 		case 'tooMuchHeight':
