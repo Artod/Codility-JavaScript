@@ -1,34 +1,34 @@
 function absDistinct ( A ) {
-    var check = {},
-        count = 0;
+	var check = {},
+		count = 0;
    
-    for (var i = 0, l = A.length; i < l; i++) {
+	for (var i = 0, l = A.length; i < l; i++) {
 		var abs = Math.abs(A[i]);
 
 		if (check[abs] !== true) {
 		   count++;
 		   check[abs] = true;
 		}
-    }
-    
-    return count;
+	}
+	
+	return count;
 }
 
-function hex_bitcount ( S ) {    
-    var bin = parseInt(S, 16).toString(2),
-        out;
+function hex_bitcount ( S ) {	
+	var bin = parseInt(S, 16).toString(2),
+		out;
 
-    if ( bin.search(/^(0|1)*$/) !== -1 ) {
-        out = bin.replace('0', '').length
-    }
+	if ( bin.search(/^(0|1)*$/) !== -1 ) {
+		out = bin.replace('0', '').length
+	}
 
-    return out;
+	return out;
 }
 
 function nesting ( S ) {
-    if (typeof S !== 'string') {
-        return;
-    }
+	if (typeof S !== 'string') {
+		return;
+	}
 	
 	S = S.replace(' ', '');
 
@@ -36,7 +36,7 @@ function nesting ( S ) {
 		S = S.replace(/\(\)/g, '');
 	}
 
-    return S.length ? 0 : 1;
+	return S.length ? 0 : 1;
 }
 
 function treeHeight ( T ) {
