@@ -45,7 +45,7 @@ function treeHeight ( T ) {
 	};
 	
 	if (check(T) === false) {
-		return undefined;
+		return;
 	}
 	
 	var height = 0,
